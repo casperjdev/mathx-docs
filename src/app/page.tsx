@@ -1,3 +1,7 @@
 export default function Home() {
-	return <h1>hello</h1>;
+	return (
+		<a href='#' className='text-neutral-200'>
+			hello
+		</a>
+	);
 }

@@ -7,7 +7,11 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			transitionTimingFunction: {
+				smooth: 'cubic-bezier(0, .8, .2, 1)',
+			},
+		},
 	},
 	plugins: [],
 };

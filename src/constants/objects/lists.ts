@@ -1,7 +1,6 @@
 export const SidebarChapters: string[] = ['numbers', 'test'];
-export const SidebarLists: string[][] = [
+export const SidebarLessons: string[][] = [
 	[
-		'Introduction',
 		'Types of numbers',
 		'Fractional numbers',
 		'Prime numbers and factoring',

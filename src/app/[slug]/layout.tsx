@@ -4,9 +4,10 @@ export default async function Layout({ params, children }: { params: { slug: str
 	const { slug } = params;
 
 	return (
-		<main className='flex flex-row'>
+		<main className='w-full h-svh flex flex-row gap-4 pt-16 pb-8'>
 			<Sidebar chapter={slug} />
-			<section>{children}</section>
+			<span className='bg-neutral-200 min-w-px h-full m-auto'></span>
+			<section className='grow px-4'>{children}</section>
 		</main>
 	);
 }

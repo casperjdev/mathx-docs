@@ -1,4 +1,4 @@
-import { SidebarLists, SidebarChapters } from '@/constants/objects/SidebarLists';
+import { SidebarLessons, SidebarChapters } from '@/constants/objects/lists';
 import { redirect } from 'next/navigation';
 
 export function getSidebarListByName(chapter: string) {
@@ -6,5 +6,10 @@ export function getSidebarListByName(chapter: string) {
 	if (index === -1) {
 		redirect('/');
 	}
-	return SidebarLists[index];
+	return SidebarLessons[index];
+}
+
+export function normalizeString(str: string) {
+	str = str.replace(/-/g, ' ');
+	return str.charAt(0).toUpperCase() + str.slice(1);
 }

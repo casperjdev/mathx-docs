@@ -11,6 +11,10 @@ const config: Config = {
 			transitionTimingFunction: {
 				smooth: 'cubic-bezier(0, .8, .2, 1)',
 			},
+			transitionProperty: {
+				width: 'width',
+				height: 'height',
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],

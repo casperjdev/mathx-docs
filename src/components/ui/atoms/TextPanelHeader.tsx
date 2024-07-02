@@ -13,7 +13,7 @@ export default function TextPanelHeader({ chapter, lesson }: TextPanelProps) {
 				<ChevronRightIcon />
 			</div>
 			<a
-				className='text-neutral-700 hover:text-neutral-200 transition-colors  ease-smooth duration-500'
+				className='text-neutral-700 hover:text-neutral-200 transition-colors ease-smooth duration-500'
 				href={`/${chapter}`}>
 				{normalizeString(chapter)}
 			</a>
@@ -21,7 +21,7 @@ export default function TextPanelHeader({ chapter, lesson }: TextPanelProps) {
 				<ChevronRightIcon />
 			</div>
 			<a
-				className='text-neutral-700 hover:text-neutral-200 transition-colors  ease-smooth duration-500'
+				className='text-neutral-700 hover:text-neutral-200 transition-colors ease-smooth duration-500'
 				href={`/${chapter}/${lesson}`}>
 				{normalizeString(lesson)}
 			</a>

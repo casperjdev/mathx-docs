@@ -14,9 +14,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className='overflow-y-hidden'>
-				<Navbar />
-				<main className='px-12'>{children}</main>
+			<body>
+				<div className='w-full h-svh flex flex-col'>
+					<Navbar />
+					<div className='h-1 grow'>{children}</div>
+				</div>
 			</body>
 		</html>
 	);

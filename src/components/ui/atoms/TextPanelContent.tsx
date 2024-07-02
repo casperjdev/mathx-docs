@@ -8,7 +8,7 @@ export default async function TextPanelContent({ chapter, lesson }: TextPanelPro
 	const fileContents = await fs.promises.readFile(filePath, 'utf8');
 
 	return (
-		<div className='h-full overflow-y-scroll pr-4'>
+		<div className='h-full overflow-y-scroll'>
 			<MDXRemote source={fileContents} />
 		</div>
 	);

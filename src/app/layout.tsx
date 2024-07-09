@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Navbar from '@/components/ui/organisms/Navbar';
 
 export const metadata: Metadata = {
 	title: 'mathx Docs',
@@ -13,7 +14,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body>{children}</body>
+			<body>
+				<div className='w-full h-svh flex flex-col'>
+					<Navbar />
+					<div className='h-1 grow'>{children}</div>
+				</div>
+			</body>
 		</html>
 	);
 }

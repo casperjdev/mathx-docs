@@ -1,3 +1,3 @@
 export default function Home() {
-	return <h1>hello</h1>;
+	return <main className='w-full h-full pt-8 text-neutral-200'>placeholder</main>;
 }

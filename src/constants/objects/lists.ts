@@ -1,4 +1,4 @@
-export const SidebarChapters: string[] = ['numbers', 'test'];
+export const SidebarChapters: string[] = ['numbers'];
 export const SidebarLessons: string[][] = [
 	[
 		'Types of numbers',
@@ -8,5 +8,4 @@ export const SidebarLessons: string[][] = [
 		'Greatest common divisor',
 		'Lowest common multiple',
 	],
-	['test', 'asdf', 'ghjk'],
 ];

@@ -15,6 +15,9 @@ const config: Config = {
 				width: 'width',
 				height: 'height',
 			},
+			screens: {
+				lg: '900px',
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],

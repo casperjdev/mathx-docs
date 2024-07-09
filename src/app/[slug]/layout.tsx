@@ -6,7 +6,7 @@ export default async function Layout({ params, children }: { params: { slug: str
 	return (
 		<main className='w-full h-full flex flex-row'>
 			<Sidebar chapter={slug} />
-			<section className='grow'>{children}</section>
+			<section className='w-[100svw] lg:pl-0 pl-6'>{children}</section>
 		</main>
 	);
 }

@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import '@/markdown/styles.css';
 
-export default async function TextPanelContent({ chapter, lesson }: TextPanelProps) {
+export default async function TextPanelContent({ chapter, lesson }: { chapter: string; lesson: string }) {
 	const filePath = path.join(process.cwd(), `src/markdown/${chapter}`, `${lesson}.mdx`);
 	const fileContents = await fs.promises.readFile(filePath, 'utf8');
 

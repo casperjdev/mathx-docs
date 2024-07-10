@@ -1,12 +1,9 @@
 import TextPanelContent from '../atoms/TextPanelContent';
-import TextPanelHeader from '../atoms/TextPanelHeader';
-import TextPanelContainer from '../molecules/TextPanelContainer';
 
-export default function TextPanel(path: TextPanelProps) {
+export default function TextPanel(path: { chapter: string; lesson: string }) {
 	return (
-		<TextPanelContainer>
-			<TextPanelHeader {...path} />
+		<article className='w-full h-full p-6 lg:pl-6 pl-12 flex flex-col gap-6 divide-neutral-200 text-neutral-500'>
 			<TextPanelContent {...path} />
-		</TextPanelContainer>
+		</article>
 	);
 }

@@ -1,12 +1,11 @@
 import NavbarGithub from '../atoms/NavbarGithub';
 import NavbarLogo from '../atoms/NavbarLogo';
-import NavbarContainer from '../molecules/NavbarContainer';
 
 export default function Navbar() {
 	return (
-		<NavbarContainer>
+		<nav className='w-full h-6 px-2 text-base text-neutral-200 bg-neutral-900 flex flex-row justify-between items-center'>
 			<NavbarLogo />
 			<NavbarGithub />
-		</NavbarContainer>
+		</nav>
 	);
 }

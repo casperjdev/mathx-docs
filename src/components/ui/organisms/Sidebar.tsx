@@ -26,7 +26,7 @@ export default function Sidebar({ chapter }: { chapter: string }) {
 	return (
 		<aside
 			ref={containerRef}
-			className='lg:static fixed lg:bg-transparent bg-neutral-900 min-w-max h-[calc(100svh-2.5rem)] flex flex-row-reverse justify-center items-center group'>
+			className='lg:static fixed lg:bg-opacity-50 bg-neutral-950 min-w-max h-[calc(100svh-2.5rem)] flex flex-row-reverse justify-center items-center group'>
 			<SidebarToggle ref={toggleRef} />
 			<SidebarList chapter={chapter} ref={listRef} />
 		</aside>

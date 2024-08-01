@@ -1,13 +1,19 @@
 import { normalizeString } from '@/lib';
-import BreadcrumbsSegment from '../atoms/BreadcrumbsSegment';
-import { ChevronRightIcon, HomeIcon } from '@/constants/icons';
+import { ChevronRightIcon } from '@/constants/icons';
+import Link from 'next/link';
 
 export default function Breadcrumbs({ chapter, lesson }: { chapter: string; lesson: string }) {
 	return (
-		<header className='w-full h-4 py-1 px-2 text-ellipsis bg-neutral-700 border-y border-y-neutral-200 text-neutral-200 lg:text-[0.5rem] text-[0.25rem] flex flex-row gap-1 justify-start items-center'>
-			<BreadcrumbsSegment text={normalizeString(chapter)} href={`/${chapter}`} />
-			<ChevronRightIcon />
-			<BreadcrumbsSegment text={normalizeString(lesson)} href={`/${chapter}/${lesson}`} />
+		<header className='w-full h-4 px-1 text-ellipsis text-[16px] leading-4 bg-neutral-700 border-y border-y-neutral-200 text-neutral-200 flex flex-row gap-1 justify-start items-center'>
+			<Link href={`/${chapter}`} className='min-w-max overflow-hidden whitespace-nowrap text-ellipsis'>
+				{normalizeString(chapter)}
+			</Link>
+			<div className='h-3/5'>
+				<ChevronRightIcon />
+			</div>
+			<Link href={`/${chapter}/${lesson}`} className='overflow-hidden whitespace-nowrap text-ellipsis'>
+				{normalizeString(lesson)}
+			</Link>
 		</header>
 	);
 }

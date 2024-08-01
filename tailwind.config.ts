@@ -18,6 +18,10 @@ const config: Config = {
 			screens: {
 				lg: '900px',
 			},
+			backgroundImage: {
+				'top-bottom-fade':
+					'linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(9,9,121,0) 10%, rgba(1,187,239,0) 90%, rgba(10,10,10,1) 100%);',
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],

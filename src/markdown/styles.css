@@ -1,8 +1,13 @@
-h1 {
+.mdx {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.mdx h1 {
 	color: rgb(229 229 229);
 	font-size: 2rem;
 }
 
-p {
+.mdx p {
 	color: rgb(212 212 212);
 }

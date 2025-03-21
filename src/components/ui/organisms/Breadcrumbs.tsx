@@ -1,30 +1,30 @@
 'use client';
 
-import { normalizeString } from '@/lib';
-import { ChevronRightIcon } from '@/constants/icons';
+import { deslugify } from '@/lib';
 import Link from 'next/link';
 import { useState } from 'react';
 import MobileMenuToggle from '../atoms/MobileMenuToggle';
 import MobileMenu from './MobileMenu';
+import { ChevronRight } from 'lucide-react';
 
 export default function Breadcrumbs({ chapter, lesson }: { chapter: string; lesson: string }) {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<header className='w-full fixed top-6 h-4 text-ellipsis text-[16px] leading-4 bg-neutral-700 border-b border-b-neutral-200 text-neutral-200 flex flex-row justify-start items-center'>
+		<header className='w-full fixed top-6 h-4 text-ellipsis text-[16px] bg-neutral-700 border-b border-b-neutral-500 text-neutral-200 flex flex-row justify-start items-center'>
 			<MobileMenuToggle open={open} onClick={setOpen} />
 			<Link
-				href={`/${chapter}/introduction`}
+				href={`/docs/${chapter}/introduction`}
 				className='min-w-max overflow-hidden whitespace-nowrap text-ellipsis px-1'>
-				{normalizeString(chapter)}
+				{deslugify(chapter)}
 			</Link>
 			<div className='h-full p-0.5'>
-				<ChevronRightIcon />
+				<ChevronRight />
 			</div>
 			<Link
-				href={`/${chapter}/${lesson}`}
+				href={`/docs/${chapter}/${lesson}`}
 				className='overflow-hidden whitespace-nowrap text-ellipsis px-1'>
-				{normalizeString(lesson)}
+				{deslugify(lesson)}
 			</Link>
 			<MobileMenu open={open} />
 		</header>

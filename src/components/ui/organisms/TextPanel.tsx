@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import fs from 'fs';
 import path from 'path';
-import '@/markdown/styles.css';
+import mdxComponents from '@/mdx-components';
 
 export default async function TextPanel({ chapter, lesson }: { chapter: string; lesson: string }) {
 	const filePath = path.join(process.cwd(), `src/markdown/${chapter}`, `${lesson}.mdx`);
@@ -9,7 +9,7 @@ export default async function TextPanel({ chapter, lesson }: { chapter: string; 
 
 	return (
 		<article className='w-full h-full overflow-y-scroll break-words px-6'>
-			<MDXRemote source={fileContents} />
+			<MDXRemote components={mdxComponents} source={fileContents} />
 		</article>
 	);
 }

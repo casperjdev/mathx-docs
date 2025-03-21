@@ -4,7 +4,6 @@
 
 :root {
 	font-size: 32px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	background-image: url('/bitmap.png');
 	background-attachment: fixed;
 	background-position: center;

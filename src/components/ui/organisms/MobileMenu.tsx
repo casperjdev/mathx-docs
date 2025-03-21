@@ -1,4 +1,3 @@
-import { SidebarChapters } from '@/constants/objects/lists';
 import Sidebar from './Sidebar';
 
 export default function MobileMenu({ open }: { open: boolean }) {
@@ -6,10 +5,8 @@ export default function MobileMenu({ open }: { open: boolean }) {
 		<div
 			className={`${
 				open ? 'w-40' : 'w-0'
-			} lg:hidden fixed overflow-hidden h-[calc(100svh-2.5rem)] top-10 bg-black z-50 transition-all ease-smooth duration-200`}>
-			{SidebarChapters.map((chapter) => (
-				<Sidebar chapter={chapter} />
-			))}
+			} lg:hidden fixed left-0 top-6 overflow-hidden h-[calc(100svh-1.5rem)] bg-black z-50 transition-all ease-smooth duration-200`}>
+			<Sidebar />
 		</div>
 	);
 }

@@ -4,9 +4,14 @@
 
 :root {
 	font-size: 32px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background-color: rgb(10 10 10);
+	background-image: url('/bitmap.png');
 	background-attachment: fixed;
+	background-position: center;
+}
+
+html,
+body {
+	height: 100%;
 }
 
 *,

@@ -1,15 +1,12 @@
-import SidebarContainer from '../molecules/SidebarContainer';
-import SidebarItem from '../atoms/SidebarItem';
-import { getSidebarListByName } from '@/lib';
+import { course } from '@/constants/objects/lists';
+import SidebarDropdown from '../molecules/SidebarDropdown';
 
-export default function Sidebar({ chapter }: { chapter: string }) {
-	const currentChapter = getSidebarListByName(chapter);
-
+export default function Sidebar() {
 	return (
-		<SidebarContainer>
-			{currentChapter.map((item) => {
-				return <SidebarItem item={item} />;
-			})}
-		</SidebarContainer>
+		<aside className='h-full pb-12 flex overflow-x-hidden overflow-y-auto bg-opacity-50 bg-neutral-950 min-w-max flex-col justify-start'>
+			{course.map((module, index) => (
+				<SidebarDropdown key={index} module={module} />
+			))}
+		</aside>
 	);
 }

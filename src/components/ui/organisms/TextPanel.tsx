@@ -1,12 +1,15 @@
-import TextPanelContent from '../atoms/TextPanelContent';
-import TextPanelHeader from '../atoms/TextPanelHeader';
-import TextPanelContainer from '../molecules/TextPanelContainer';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import fs from 'fs';
+import path from 'path';
+import mdxComponents from '@/mdx-components';
 
-export default function TextPanel(path: TextPanelProps) {
+export default async function TextPanel({ chapter, lesson }: { chapter: string; lesson: string }) {
+	const filePath = path.join(process.cwd(), `src/markdown/${chapter}`, `${lesson}.mdx`);
+	const fileContents = await fs.promises.readFile(filePath, 'utf8');
+
 	return (
-		<TextPanelContainer>
-			<TextPanelHeader {...path} />
-			<TextPanelContent {...path} />
-		</TextPanelContainer>
+		<article className='w-full h-full overflow-y-scroll break-words px-6'>
+			<MDXRemote components={mdxComponents} source={fileContents} />
+		</article>
 	);
 }

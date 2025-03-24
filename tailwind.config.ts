@@ -13,8 +13,8 @@ const config: Config = {
 				smooth: 'cubic-bezier(0, .8, .2, 1)',
 			},
 			transitionProperty: {
-				width: 'width',
-				height: 'height',
+				width: 'min-width,width,max-width',
+				height: 'height, max-height',
 			},
 			screens: {
 				lg: '900px',

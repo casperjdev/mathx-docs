@@ -2,8 +2,8 @@ import { Module } from '../types';
 
 export const course: Module[] = [
 	{
-		chapter: 'Numbers',
-		lessons: [
+		title: 'Numbers',
+		items: [
 			'Types of numbers',
 			'Fractional numbers',
 			'Prime numbers and factoring',
@@ -13,8 +13,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Algebra',
-		lessons: [
+		title: 'Algebra',
+		items: [
 			'Expressions and Equations',
 			'Linear Equations',
 			'Inequalities',
@@ -24,8 +24,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Geometry',
-		lessons: [
+		title: 'Geometry',
+		items: [
 			'Lines, Angles, and Planes',
 			'Triangles and Congruence',
 			'Quadrilaterals and Polygons',
@@ -35,8 +35,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Linear Functions',
-		lessons: [
+		title: 'Linear Functions',
+		items: [
 			'Graphing Linear Functions',
 			'Slope and Rate of Change',
 			'Intercepts and Slope-Intercept Form',
@@ -46,8 +46,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Quadratic Functions',
-		lessons: [
+		title: 'Quadratic Functions',
+		items: [
 			'Graphing Quadratic Functions',
 			'Vertex Form and Standard Form',
 			'Factoring Quadratic Expressions',
@@ -57,8 +57,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Logarithmic Functions',
-		lessons: [
+		title: 'Logarithmic Functions',
+		items: [
 			'Graphing Logarithmic Functions',
 			'Common and Natural Logarithms',
 			'Logarithmic Equations',
@@ -68,8 +68,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Exponential Functions',
-		lessons: [
+		title: 'Exponential Functions',
+		items: [
 			'Graphing Exponential Functions',
 			'Exponential Growth and Decay',
 			'Exponential Equations',
@@ -79,8 +79,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Measurable Functions',
-		lessons: [
+		title: 'Measurable Functions',
+		items: [
 			'Graphing Measurable Functions',
 			'Limits and Continuity',
 			'Integration of Measurable Functions',
@@ -90,8 +90,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Trigonometry',
-		lessons: [
+		title: 'Trigonometry',
+		items: [
 			'Trigonometric Ratios',
 			'Graphs of Trigonometric Functions',
 			'Inverse Trigonometric Functions',
@@ -101,8 +101,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Polynomials',
-		lessons: [
+		title: 'Polynomials',
+		items: [
 			'Polynomial Operations',
 			'Factoring Polynomials',
 			'Polynomial Division',
@@ -112,8 +112,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Probability & Statistics',
-		lessons: [
+		title: 'Probability & Statistics',
+		items: [
 			'Basic Counting Principles',
 			'Probability Distributions',
 			'Descriptive Statistics',
@@ -123,8 +123,8 @@ export const course: Module[] = [
 		],
 	},
 	{
-		chapter: 'Calculus',
-		lessons: [
+		title: 'Calculus',
+		items: [
 			'Limits and Continuity',
 			'Derivatives and Differentiation',
 			'Applications of Derivatives',

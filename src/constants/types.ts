@@ -6,6 +6,6 @@ export type MobileMenuToggleProps = {
 };
 
 export type Module = {
-	chapter: string;
-	lessons: string[];
+	title: string;
+	items: string[];
 };

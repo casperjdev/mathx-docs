@@ -24,10 +24,8 @@ export default function RootLayout({
 	return (
 		<html lang='en' className={golosText.className}>
 			<body>
-				<div className='w-full h-full flex flex-col'>
-					<Navbar />
-					<div className='h-1 grow'>{children}</div>
-				</div>
+				<Navbar />
+				<div className='w-full h-full'>{children}</div>
 			</body>
 		</html>
 	);
